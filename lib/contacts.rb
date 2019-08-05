@@ -28,5 +28,6 @@ def remove_strawberry(contacts)
       end
       favorite_ice_cream.delete("strawberry")
     end
+  end 
   end
 end
