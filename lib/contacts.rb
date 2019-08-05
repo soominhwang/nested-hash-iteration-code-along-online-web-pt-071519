@@ -26,7 +26,7 @@ def remove_strawberry(contacts)
       value.each do |flavor|
         favorite_ice_cream << "#{flavor}"
       end
-      favorite_ice_cream.delete("Strawberry")
+      favorite_ice_cream.delete("strawberry")
     end
   end
 end
