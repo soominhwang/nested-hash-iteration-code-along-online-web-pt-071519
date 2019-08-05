@@ -15,6 +15,17 @@ require 'pry'
   # }
 
 def remove_strawberry(contacts)
-  contacts.each do |person,data|
-    puts "#{person}: #{data}"
+    contacts.each do |person,data|
+      puts "#{person}: #{data}"
+
+      data.each do |attribute, value|
+      puts "#{attribute}: #{value}"
+
+      if attribute == :favorite_ice_cream_flavors
+      value.each do |flavor|
+        # here, each index element in an ice cream flavor string
+        puts "#{flavor}"
+      end
+    end
+  end
 end
