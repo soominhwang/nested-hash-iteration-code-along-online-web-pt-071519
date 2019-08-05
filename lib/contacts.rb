@@ -22,9 +22,11 @@ def remove_strawberry(contacts)
       puts "#{attribute}: #{value}"
 
       if attribute == :favorite_ice_cream_flavors
+      favorite_ice_cream = []
       value.each do |flavor|
-        puts "#{flavor}"
+        favorite_ice_cream << "#{flavor}"
       end
+      favorite_ice_cream.delete("Strawberry")
     end
   end
 end
